@@ -1,0 +1,177 @@
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;/* Changed text color to white for better contrast */
+    font-size:large; 
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    background-color: #3E2723; /* Darker background */
+}
+
+header {
+    background: linear-gradient(to right, #FF6F00, #FF8F00); /* Darker orange gradient */
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #0d0d0d; /* White text for better visibility */
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.2em;
+    margin: 0;
+    margin-bottom: 20px; /* Lower the title */
+}
+
+header p {
+    color: #872424; /* White text for description */
+    font-size: 1.6em;
+    margin: 20px 0;
+}
+
+header .tiles {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 20px;
+}
+
+header .tile {
+    background: #FFAB40; /* Lighter orange for tiles */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+header .tile i {
+    font-size: 2em;
+    color: #FFFFFF; /* White icon color */
+    transition: color 0.3s ease;
+}
+
+header .tile p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text for tile descriptions */
+}
+
+header .tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border: 2px solid #FFDAB9;
+}
+
+header .tile:hover i {
+    color: #FFDAB9; /* Change icon color on hover */
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    padding: 10px 20px;
+}
+
+.nav-button {
+    color: #0f0e0e; /* White text for nav buttons */
+    text-decoration: none; /* Remove underline */
+    margin-left: 20px; /* Space between buttons */
+    font-weight: bold; /* Bold text */
+
+
+}
+
+main {
+    padding: 40px 20px; /* Increased padding for main content */
+    text-align: center; /* Center text */
+}
+
+input[type="text"], input[type="password"] {
+    border: 2px solid #FF5733; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding inside input */
+    margin: 10px 0; /* Margin above and below */
+    width: 80%; /* Width of input */
+    max-width: 500px; /* Maximum width */
+    box-sizing: border-box; /* Include padding and border in width */
+    transition: border-color 0.3s ease; /* Transition for border color */
+    background-color: #FFFFFF; /* White background for input fields */
+}
+
+.btn {
+    background-color: #FF5733; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px 30px; /* Padding inside button */
+    font-size: 1.1em; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effects */
+    position:calc();
+}
+
+.btn:hover {
+    background-color: #FFDAB9; /* Button hover color */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+footer {
+    background-color: #4E342E; /* Background color for footer */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 20px 0; /* Padding for footer */
+    position: relative; /* Ensure footer is positioned relative to the content */
+    bottom: 0; /* Stick to bottom */
+    width: 100%; /* Full width */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 0.9em; /* Font size for footer text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .tiles {
+        flex-direction: column; /* Stack tiles vertically on small screens */
+        align-items: center; /* Center align tiles */
+    }
+    
+    header .tile {
+        width: 80%; /* Width of tiles on small screens */
+        margin-bottom: 10px; /* Space between tiles */
+    }
+}
+
+/* Additional styles for centered content */
+.centered-content {
+    max-width: 800px; /* Maximum width for centered content */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px; /* Padding for centered content */
+    text-align: center; /* Center text */
+}
+
+/* File Upload Styles */
+.file-upload {
+    border: 2px dotted #FF5733; /* Dotted border for file upload area */
+    padding: 20px; /* Padding inside the upload area */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text */
+    margin: 20px auto; /* Center the upload area */
+    max-width: 500px; /* Maximum width for upload area */
+}
+
+
+
+
+
+
+
+
+
+
+
